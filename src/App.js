@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/header/Header";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Services from "./components/services/Services";
+import Qualification from "./components/qualification/Qualification";
+import Work from "./components/work/Work";
+import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import ScrollUp from "./components/scrollup/ScrollUp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init(); //You can add options as per your need inside an object
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* MENIT KE 2:26:00 */}
+      {/* https://www.youtube.com/watch?v=3aCoZudPEKE */}
+      {/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
+      <Header />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Work />
+        {/* <Testimonials /> */}
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollUp />
+    </>
   );
 }
 
