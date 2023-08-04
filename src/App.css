@@ -208,7 +208,9 @@ img {
   }
   
   .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    width: 350px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
+
 }

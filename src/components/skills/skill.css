@@ -68,5 +68,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .skills__container{
+        padding: 20px 2rem;
+    }
+
   }
   

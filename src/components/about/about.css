@@ -94,5 +94,15 @@
     .about__info {
         grid-template-columns: repeat(2, 1fr);
     }
-
+  
+    .about__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+      .about__box{
+        width: 60%;
+      }
 }

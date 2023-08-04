@@ -15,30 +15,30 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    AOS.init(); //You can add options as per your need inside an object
-  }, []);
+	useEffect(() => {
+		AOS.init(); //You can add options as per your need inside an object
+	}, []);
 
-  return (
-    <>
-      {/* MENIT KE 2:26:00 */}
-      {/* https://www.youtube.com/watch?v=3aCoZudPEKE */}
-      {/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
-      <Header />
-      <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        <Services />
-        <Qualification />
-        <Work />
-        {/* <Testimonials /> */}
-        <Contact />
-      </main>
-      <Footer />
-      <ScrollUp />
-    </>
-  );
+	return (
+		<>
+			{/* MENIT KE 2:26:00 */}
+			{/* https://www.youtube.com/watch?v=3aCoZudPEKE */}
+			{/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
+			<Header />
+			<main className="main">
+				<Home />
+				<About />
+				<Skills />
+				<Services />
+				<Qualification />
+				<Work />
+				{/* <Testimonials /> */}
+				<Contact />
+			</main>
+			<Footer />
+			{/* <ScrollUp /> */}
+		</>
+	);
 }
 
 export default App;
