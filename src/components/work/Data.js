@@ -1,4 +1,4 @@
-import Work1 from "../../assets/portf/hostingku.png";
+import Work1 from "../../assets/portf/workpath.png";
 import Work2 from "../../assets/portf/mts.png";
 import Work3 from "../../assets/portf/nadia.png";
 import Work4 from "../../assets/portf/skilline.png";
@@ -9,9 +9,9 @@ export const projectsData = [
 	{
 		id: 1,
 		image: Work1,
-		title: "Hostingku",
+		title: "Workpath",
 		category: "web",
-		link: "https://hosting-ku.vercel.app/",
+		link: "https://workpath-fe.vercel.app/",
 	},
 	{
 		id: 2,
