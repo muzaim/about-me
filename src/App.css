@@ -202,15 +202,7 @@ img {
   }
 }
 
-@media screen and (max-width: 567px) {
-  :root {
-    width: 567px;
-  }
-
-  .container {
-    width: 567px;
-  }
-}
+@media screen and (max-width: 567px) {}
 
 /* SMALL DEVICE */
 @media screen and (max-width: 350px) {
