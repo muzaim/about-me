@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
+import HomeNew from "./components/homeNew/homeNew";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
@@ -26,7 +27,8 @@ function App() {
 			{/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
 			<Header />
 			<main className="main">
-				<Home />
+				{/* <Home /> */}
+				<HomeNew />
 				{/* <About /> */}
 				<Skills />
 				<Services />
