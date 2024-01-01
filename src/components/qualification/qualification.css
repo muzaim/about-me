@@ -14,6 +14,7 @@
     color: var(--title-color);
     margin: 0 var(--mb-0-1);
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .qualification__button:hover {
@@ -27,6 +28,7 @@
 
 .qualification__active {
     color: var(--title-color-dark);
+    /* background-color: red; */
 }
 
 .qualification__section {
@@ -103,6 +105,7 @@
 @media screen and (max-width:768px) {
     .qualification__sections {
         grid-template-columns: initial;
+        margin: 0 1.5rem;
     }
 
     .qualification__button {
@@ -114,5 +117,9 @@
 @media screen and (max-width:350px) {
     .qualification__data {
         gap: 0.5rem;
+    }
+
+    .qualification__sections {
+        margin: 0 1.5rem;
     }
 }

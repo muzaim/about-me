@@ -38,7 +38,7 @@ const Qualification = () => {
 					</div>
 				</div>
 
-				<div className="qualification__section">
+				<div className="qualification__sections">
 					<div
 						className={
 							toggleState === 1
@@ -46,6 +46,7 @@ const Qualification = () => {
 								: "qualification__content "
 						}
 					>
+						{/* EDUCATION */}
 						<div className="qualification__data" data-aos="fade-up">
 							<div></div>
 							<div>
@@ -67,7 +68,7 @@ const Qualification = () => {
 						</div>
 
 						<div className="qualification__data" data-aos="fade-up">
-							<div>
+							<div className="text-end">
 								<h3 className="qualification__title">
 									Senior High School
 								</h3>
@@ -125,6 +126,7 @@ const Qualification = () => {
 						</div>
 					</div>
 
+					{/* EXPERIENCE */}
 					<div
 						className={
 							toggleState === 2
@@ -153,7 +155,7 @@ const Qualification = () => {
 						</div>
 
 						<div className="qualification__data" data-aos="fade-up">
-							<div>
+							<div className="text-end">
 								<h3 className="qualification__title">
 									Laravel Developer
 								</h3>
@@ -192,16 +194,18 @@ const Qualification = () => {
 						</div>
 
 						<div className="qualification__data" data-aos="fade-up">
-							<div>
-								<h3 className="qualification__title">
-									Backend Developer
-								</h3>
-								<span className="qualification__subtitle">
-									Astra Credit Companies
-								</span>
-								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i>{" "}
-									2021
+							<div className="text-end">
+								<div>
+									<h3 className="qualification__title">
+										Backend Developer
+									</h3>
+									<span className="qualification__subtitle">
+										Astra Credit Companies
+									</span>
+									<div className="qualification__calendar">
+										<i className="uil uil-calendar-alt"></i>{" "}
+										2021
+									</div>
 								</div>
 							</div>
 							<div>
