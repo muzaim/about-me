@@ -23,7 +23,7 @@ export const projectsData = [
 	{
 		id: 3,
 		image: Work3,
-		title: "Nadia Dashboard",
+		title: "Sweet Dashboard",
 		category: "web",
 		link: "https://nadia-dashboard.vercel.app/",
 	},
