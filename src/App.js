@@ -25,7 +25,7 @@ function App() {
 			{/* MENIT KE 2:26:00 */}
 			{/* https://www.youtube.com/watch?v=3aCoZudPEKE */}
 			{/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
-			{/* YANG BAHAYA = SKILL DAN CONTRACT */}
+			{/* YANG BAHAYA = SKILL */}
 			<Header />
 			<main className="main">
 				<Home />
@@ -35,7 +35,7 @@ function App() {
 				<Qualification />
 				<Work />
 				{/* <Testimonials /> */}
-				{/* <Contact /> */}
+				<Contact />
 			</main>
 			<Footer />
 			{/* <ScrollUp /> */}

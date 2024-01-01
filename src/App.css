@@ -205,3 +205,15 @@ img {
 @media screen and (max-width: 567px) {}
 
 /* SMALL DEVICE */
+@media screen and (max-width: 350px) {
+  :root {
+    width: 100%;
+    --big-font-size: 2.25rem;
+    background-color: black;
+  }
+
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
