@@ -26,8 +26,8 @@ function App() {
 			{/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
 			<Header />
 			<main className="main">
-				<Home />
-				<About />
+				{/* <Home /> */}
+				{/* <About /> */}
 				<Skills />
 				<Services />
 				<Qualification />
