@@ -38,7 +38,7 @@ function App() {
 				<Contact />
 			</main>
 			<Footer />
-			{/* <ScrollUp /> */}
+			<ScrollUp />
 		</>
 	);
 }

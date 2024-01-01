@@ -71,6 +71,11 @@
 
 /* SMALL DEVICE */
 @media screen and (max-width: 350px) {
+
+    .skills__content {
+        margin: 0 1.5rem;
+    }
+
     .skills__box {
         column-gap: 1.25rem;
     }
