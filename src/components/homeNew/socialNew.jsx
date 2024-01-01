@@ -6,8 +6,12 @@ const SocialNew = () => {
 			<a href="" className="home__social-icon" target="_blank">
 				<i class="uil uil-instagram"></i>
 			</a>
-			<a href="" className="home__social-icon" target="_blank"></a>
-			<a href="" className="home__social-icon" target="_blank"></a>
+			<a href="" className="home__social-icon" target="_blank">
+				<i class="uil uil-instagram"></i>
+			</a>
+			<a href="" className="home__social-icon" target="_blank">
+				<i class="uil uil-instagram"></i>
+			</a>
 		</div>
 	);
 };

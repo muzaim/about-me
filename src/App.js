@@ -25,17 +25,17 @@ function App() {
 			{/* MENIT KE 2:26:00 */}
 			{/* https://www.youtube.com/watch?v=3aCoZudPEKE */}
 			{/* setelah qualification : https://www.youtube.com/watch?v=lvqsSNvfcMo */}
+			{/* YANG BAHAYA = SKILL DAN CONTRACT */}
 			<Header />
 			<main className="main">
-				{/* <Home /> */}
-				<HomeNew />
-				{/* <About /> */}
-				<Skills />
+				<Home />
+				<About />
+				{/* <Skills /> */}
 				<Services />
 				<Qualification />
 				<Work />
 				{/* <Testimonials /> */}
-				<Contact />
+				{/* <Contact /> */}
 			</main>
 			<Footer />
 			{/* <ScrollUp /> */}
