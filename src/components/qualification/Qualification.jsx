@@ -47,25 +47,6 @@ const Qualification = () => {
 						}
 					>
 						<div className="qualification__data" data-aos="fade-up">
-							<div className="text-end">
-								<h3 className="qualification__title">
-									Elementary School
-								</h3>
-								<span className="qualification__subtitle">
-									Aisyiyah 1 Elementary School
-								</span>
-								<div className="qualification__calendar">
-									<i className="uil uil-calendar-alt"></i>{" "}
-									2004 - 2010
-								</div>
-							</div>
-							<div>
-								<span className="qualification__rounder"></span>
-								<span className="qualification__line"></span>
-							</div>
-						</div>
-
-						<div className="qualification__data" data-aos="fade-up">
 							<div></div>
 							<div>
 								<span className="qualification__rounder"></span>
@@ -73,14 +54,14 @@ const Qualification = () => {
 							</div>
 							<div>
 								<h3 className="qualification__title">
-									Junior High School
+									Bachelor Degree
 								</h3>
 								<span className="qualification__subtitle">
-									Baitul Izzah Junior High School
+									University Of Technology Yogyakarta
 								</span>
 								<div className="qualification__calendar">
 									<i className="uil uil-calendar-alt"></i>{" "}
-									2011 - 2013
+									2016 - 2021
 								</div>
 							</div>
 						</div>
@@ -112,15 +93,34 @@ const Qualification = () => {
 							</div>
 							<div>
 								<h3 className="qualification__title">
-									Bachelor Degree
+									Junior High School
 								</h3>
 								<span className="qualification__subtitle">
-									University Of Technology Yogyakarta
+									Baitul Izzah Junior High School
 								</span>
 								<div className="qualification__calendar">
 									<i className="uil uil-calendar-alt"></i>{" "}
-									2016 - 2021
+									2011 - 2013
 								</div>
+							</div>
+						</div>
+
+						<div className="qualification__data" data-aos="fade-up">
+							<div className="text-end">
+								<h3 className="qualification__title">
+									Elementary School
+								</h3>
+								<span className="qualification__subtitle">
+									Aisyiyah 1 Elementary School
+								</span>
+								<div className="qualification__calendar">
+									<i className="uil uil-calendar-alt"></i>{" "}
+									2004 - 2010
+								</div>
+							</div>
+							<div>
+								<span className="qualification__rounder"></span>
+								<span className="qualification__line"></span>
 							</div>
 						</div>
 					</div>
@@ -133,16 +133,36 @@ const Qualification = () => {
 						}
 					>
 						<div className="qualification__data" data-aos="fade-up">
+							<div></div>
+							<div>
+								<span className="qualification__rounder"></span>
+								<span className="qualification__line"></span>
+							</div>
 							<div>
 								<h3 className="qualification__title">
-									Backend Developer
+									Front End Developer
 								</h3>
 								<span className="qualification__subtitle">
-									Astra Credit Companies
+									PT. Sarana Multigriya Finansial(Persero)
 								</span>
 								<div className="qualification__calendar">
 									<i className="uil uil-calendar-alt"></i>{" "}
-									2021 - 2023
+									2023
+								</div>
+							</div>
+						</div>
+
+						<div className="qualification__data" data-aos="fade-up">
+							<div>
+								<h3 className="qualification__title">
+									Laravel Developer
+								</h3>
+								<span className="qualification__subtitle">
+									Aisyiyah Elementary School
+								</span>
+								<div className="qualification__calendar">
+									<i className="uil uil-calendar-alt"></i>{" "}
+									2023
 								</div>
 							</div>
 							<div>
@@ -174,14 +194,14 @@ const Qualification = () => {
 						<div className="qualification__data" data-aos="fade-up">
 							<div>
 								<h3 className="qualification__title">
-									Laravel Developer
+									Backend Developer
 								</h3>
 								<span className="qualification__subtitle">
-									Aisyiyah Elementary School
+									Astra Credit Companies
 								</span>
 								<div className="qualification__calendar">
 									<i className="uil uil-calendar-alt"></i>{" "}
-									2023
+									2021
 								</div>
 							</div>
 							<div>

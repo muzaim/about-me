@@ -57,9 +57,9 @@ const Data = () => {
 			</h1>
 			<h3 className="home__subtitle">Web Developer</h3>
 			<p className="home__description">
-				Currently focused on backend developer, but exposed in all
-				aspects of web development including frontend and backend, ui/ux
-				designer, and devops engineer.
+				Currently focused on Frontend Developer, but exposed in all
+				aspects of web development including frontend and backend,
+				penetration tester, and devops engineer.
 			</p>
 			<a href="#contact" className="button button--flex">
 				Say Hello
