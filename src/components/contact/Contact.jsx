@@ -1,19 +1,47 @@
 import React, { useRef, useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { useFormik } from "formik";
+import * as yup from "yup";
 
 const Contact = () => {
 	const form = useRef();
+	const [showSuccess, setShowSuccess] = useState(false);
 	const sendEmail = (e) => {
-		e.preventDefault();
-
+		setTimeout(() => {
+			setShowSuccess(true);
+		}, 1000);
 		emailjs.sendForm(
 			"service_d87741p",
-			"service_d87741p",
+			"template_ics8m2l",
 			form.current,
 			"HZVK84zdM2K-TY6HQ"
 		);
 		e.target.reset();
+	};
+
+	const formik = useFormik({
+		initialValues: {
+			name: "",
+			email: "",
+			project: "",
+		},
+		onSubmit: (values) => {
+			sendEmail(values);
+			formik.resetForm();
+		},
+		validateOnChange: false, // this one
+		validateOnBlur: false, // and this one
+		validationSchema: yup.object().shape({
+			name: yup.string().required().min(3).max(20),
+			email: yup.string().required().email(),
+			project: yup.string().required().min(3).max(50),
+		}),
+	});
+
+	const handleForm = (event) => {
+		const { target } = event;
+		formik.setFieldValue(target.name, target.value);
 	};
 
 	return (
@@ -88,19 +116,25 @@ const Contact = () => {
 					<h3 className="contact__title">Write me your project</h3>
 					<form
 						ref={form}
-						onSubmit={sendEmail}
+						onSubmit={formik.handleSubmit}
 						className="contact__form"
 					>
-						<div className="contact__form-div">
+						<div className={`contact__form-div`}>
 							<label htmlFor="" className="contact__form-tag">
 								Name
 							</label>
 							<input
 								type="text"
 								name="name"
-								className="contact__form-input"
+								className={`contact__form-input ${
+									formik.errors.name ? "isInvalid" : ""
+								}`}
 								placeholder="Insert your name"
+								onChange={handleForm}
 							/>
+							<p className="contact__form-error">
+								{formik.errors.name}
+							</p>
 						</div>
 
 						<div className="contact__form-div">
@@ -110,9 +144,15 @@ const Contact = () => {
 							<input
 								type="email"
 								name="email"
-								className="contact__form-input"
+								className={`contact__form-input ${
+									formik.errors.email ? "isInvalid" : ""
+								}`}
 								placeholder="Insert your email"
+								onChange={handleForm}
 							/>
+							<p className="contact__form-error">
+								{formik.errors.email}
+							</p>
 						</div>
 
 						<div className="contact__form-div contact__form-area">
@@ -123,11 +163,18 @@ const Contact = () => {
 								name="project"
 								cols="30"
 								rows="10"
-								className="contact__form-input"
+								className={`contact__form-input ${
+									formik.errors.project ? "isInvalid" : ""
+								}`}
 								placeholder="Write your project"
+								onChange={handleForm}
 							></textarea>
+							<p className="contact__form-error-project">
+								{formik.errors.project}
+							</p>
 						</div>
-						<button className="button button--flex">
+
+						<button className="button button--flex" type="submit">
 							Send Message
 							<svg
 								className="button__icon"
@@ -147,6 +194,11 @@ const Contact = () => {
 								></path>
 							</svg>
 						</button>
+						{showSuccess && (
+							<p className="contact__success-message">
+								Your message was sent.
+							</p>
+						)}
 					</form>
 				</div>
 			</div>
