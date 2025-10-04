@@ -6,6 +6,8 @@ import Work5 from "../../assets/portf/tamakochi.png";
 import Work6 from "../../assets/portf/travlog.png";
 import Work7 from "../../assets/portf/magazine.png";
 import Work8 from "../../assets/portf/ollama.png";
+import Work9 from "../../assets/portf/people.png";
+import Work10 from "../../assets/portf/hostingku.png";
 
 export const projectsData = [
 	{
@@ -44,6 +46,15 @@ export const projectsData = [
 		desc: "An AI-powered task organizer that helps manage activities intelligently.",
 	},
 	{
+		id: 9,
+		image: Work9,
+		title: "ElderCare",
+		category: "web",
+		link: "https://spyralize-submission.vercel.app/",
+		tools: "ReactJS",
+		desc: "A web platform dedicated to supporting and raising awareness for elderly care and well-being.",
+	},
+	{
 		id: 3,
 		image: Work3,
 		title: "Sweet Dashboard",
@@ -76,6 +87,15 @@ export const projectsData = [
 		category: "web",
 		tools: "Laravel",
 		desc: "A school website for information, announcements, and student services.",
+	},
+	{
+		id: 10,
+		image: Work10,
+		title: "Hostingku",
+		category: "web",
+		link: "https://vercel.com/muzaims-projects/hosting-ku",
+		tools: "ReactJS",
+		desc: "A simple web hosting platform for managing and deploying websites with ease.",
 	},
 ];
 
