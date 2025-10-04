@@ -42,7 +42,7 @@ export const projectsData = [
 		image: Work7,
 		title: "Soerdja Magazine",
 		category: "web",
-		link: "https://soerdja-magazine-pagb-gfcwhw8t8-muzaims-projects.vercel.app/",
+		link: "https://soerdja-magazine-pagb.vercel.app/",
 		tools: "NextJS",
 		desc: "An online magazine platform for articles and digital media content.",
 	},
