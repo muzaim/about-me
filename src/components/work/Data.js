@@ -11,6 +11,15 @@ import Work10 from "../../assets/portf/hostingku.png";
 
 export const projectsData = [
 	{
+		id: 9,
+		image: Work9,
+		title: "ElderCare",
+		category: "web",
+		link: "https://spyralize-submission.vercel.app/",
+		tools: "ReactJS",
+		desc: "A web platform dedicated to supporting and raising awareness for elderly care and well-being.",
+	},
+	{
 		id: 1,
 		image: Work1,
 		title: "Workpath",
@@ -45,15 +54,7 @@ export const projectsData = [
 		tools: "NextJS, Ollama",
 		desc: "An AI-powered task organizer that helps manage activities intelligently.",
 	},
-	{
-		id: 9,
-		image: Work9,
-		title: "ElderCare",
-		category: "web",
-		link: "https://spyralize-submission.vercel.app/",
-		tools: "ReactJS",
-		desc: "A web platform dedicated to supporting and raising awareness for elderly care and well-being.",
-	},
+
 	{
 		id: 3,
 		image: Work3,
@@ -93,7 +94,7 @@ export const projectsData = [
 		image: Work10,
 		title: "Hostingku",
 		category: "web",
-		link: "https://vercel.com/muzaims-projects/hosting-ku",
+		link: "https://hosting-ku.vercel.app/",
 		tools: "ReactJS",
 		desc: "A simple web hosting platform for managing and deploying websites with ease.",
 	},
