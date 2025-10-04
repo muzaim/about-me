@@ -55,12 +55,14 @@ const Data = () => {
 					></path>
 				</svg>
 			</h1>
-			<h3 className="home__subtitle">Frontend Developer</h3>
+			<h3 className="home__subtitle">Fullstack Developer</h3>
 			<p className="home__description">
-				Currently focused on Frontend Developer, but exposed in all
-				aspects of web development including frontend and backend,
-				penetration testing, and devops engineer.
+				I build stuff for the web and mobile, and I care a lot about how
+				things look and feel. Whether it’s a website, an app, or a clean
+				UI/UX design, my goal is always the same:{" "}
+				<b>make it work beautifully and make it fun to use.</b>
 			</p>
+
 			<a href="#contact" className="button button--flex">
 				Say Hello
 				<svg

@@ -17,16 +17,16 @@ const Backend = () => {
 					<div className="skills__data">
 						<i className="bx bx-badge-check"></i>
 						<div>
-							<h3 className="skills__name">Golang</h3>
-							<span className="skills__level">Basic</span>
+							<h3 className="skills__name">Gin</h3>
+							<span className="skills__level">Intermediate</span>
 						</div>
 					</div>
 
 					<div className="skills__data">
 						<i className="bx bx-badge-check"></i>
 						<div>
-							<h3 className="skills__name">NodeJs</h3>
-							<span className="skills__level">Intermediate</span>
+							<h3 className="skills__name">NestJS</h3>
+							<span className="skills__level">Advanced</span>
 						</div>
 					</div>
 				</div>
@@ -34,8 +34,8 @@ const Backend = () => {
 					<div className="skills__data">
 						<i className="bx bx-badge-check"></i>
 						<div>
-							<h3 className="skills__name">MySQL</h3>
-							<span className="skills__level">Advanced</span>
+							<h3 className="skills__name">Echo</h3>
+							<span className="skills__level">Basic</span>
 						</div>
 					</div>
 					<div className="skills__data">
