@@ -59,8 +59,8 @@ const Data = () => {
 			<p className="home__description">
 				I build stuff for the web and mobile, and I care a lot about how
 				things look and feel. Whether it’s a website, an app, or a clean
-				UI/UX design, my goal is always the same:{" "}
-				<b>make it work beautifully and make it fun to use.</b>
+				UI/UX design. My goal is always the same:{" "}
+				<b>make it work beautifully and fun to use.</b>
 			</p>
 
 			<a href="#contact" className="button button--flex">

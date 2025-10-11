@@ -8,6 +8,7 @@ import Work7 from "../../assets/portf/magazine.png";
 import Work8 from "../../assets/portf/ollama.png";
 import Work9 from "../../assets/portf/people.png";
 import Work10 from "../../assets/portf/hostingku.png";
+import Work11 from "../../assets/portf/IDENTITY.png";
 
 export const projectsData = [
 	{
@@ -83,12 +84,13 @@ export const projectsData = [
 	},
 	{
 		id: 6,
-		image: Work2,
-		title: "Aisyiyah Elementary School",
-		category: "web",
-		tools: "Laravel",
-		desc: "A school website for information, announcements, and student services.",
+		image: Work11,
+		title: "Instagram Clone",
+		category: "app",
+		tools: "Flutter",
+		desc: "A social app for sharing photos and interacting with users, inspired by Instagram.",
 	},
+
 	{
 		id: 10,
 		image: Work10,
