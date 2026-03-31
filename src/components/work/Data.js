@@ -1,11 +1,11 @@
-import Work1 from "../../assets/portf/workpath.png";
+import Work1 from "../../assets/portf/img12.png";
 import Work3 from "../../assets/portf/nadia.png";
 import Work4 from "../../assets/portf/skilline.png";
 import Work5 from "../../assets/portf/tamakochi.png";
 import Work6 from "../../assets/portf/travlog.png";
-import Work7 from "../../assets/portf/magazine.png";
+import Work7 from "../../assets/portf/mag1.png";
 import Work8 from "../../assets/portf/ollama.png";
-import Work9 from "../../assets/portf/people.png";
+import Work9 from "../../assets/portf/img13.png";
 import Work10 from "../../assets/portf/cs.png";
 import Work11 from "../../assets/portf/IDENTITY.png";
 
