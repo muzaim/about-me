@@ -1,5 +1,4 @@
 import Work1 from "../../assets/portf/workpath.png";
-import Work2 from "../../assets/portf/mts.png";
 import Work3 from "../../assets/portf/nadia.png";
 import Work4 from "../../assets/portf/skilline.png";
 import Work5 from "../../assets/portf/tamakochi.png";
