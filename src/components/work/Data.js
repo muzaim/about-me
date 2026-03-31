@@ -7,7 +7,7 @@ import Work6 from "../../assets/portf/travlog.png";
 import Work7 from "../../assets/portf/magazine.png";
 import Work8 from "../../assets/portf/ollama.png";
 import Work9 from "../../assets/portf/people.png";
-import Work10 from "../../assets/portf/hostingku.png";
+import Work10 from "../../assets/portf/cs.png";
 import Work11 from "../../assets/portf/IDENTITY.png";
 
 export const projectsData = [
@@ -94,11 +94,11 @@ export const projectsData = [
 	{
 		id: 10,
 		image: Work10,
-		title: "Hostingku",
+		title: "Cryptho Sphere",
 		category: "web",
-		link: "https://hosting-ku.vercel.app/",
+		link: "https://crypto-sphere-murex.vercel.app/",
 		tools: "ReactJS",
-		desc: "A simple web hosting platform for managing and deploying websites with ease.",
+		desc: "A modern web platform for tracking cryptocurrency markets, prices, and trends in real-time.",
 	},
 ];
 
