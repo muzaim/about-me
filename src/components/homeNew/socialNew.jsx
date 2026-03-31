@@ -3,14 +3,29 @@ import React from "react";
 const SocialNew = () => {
 	return (
 		<div className="home__social">
-			<a href="" className="home__social-icon" target="_blank">
-				<i class="uil uil-instagram"></i>
+			<a
+				href="https://www.instagram.com/msyafrisuryam/"
+				className="home__social-icon"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<i className="uil uil-instagram"></i>
 			</a>
-			<a href="" className="home__social-icon" target="_blank">
-				<i class="uil uil-instagram"></i>
+			<a
+				href="https://www.linkedin.com/in/syafri-surya-574369207/"
+				className="home__social-icon"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<i className="uil uil-linkedin"></i>
 			</a>
-			<a href="" className="home__social-icon" target="_blank">
-				<i class="uil uil-instagram"></i>
+			<a
+				href="https://github.com/muzaim"
+				className="home__social-icon"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<i className="uil uil-github-alt"></i>
 			</a>
 		</div>
 	);

@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/about.jpeg";
-import About1Img from "../../assets/about1.jpg";
 import CV from "../../assets/cv_syafri_surya.pdf";
 import Info from "./Info";
 

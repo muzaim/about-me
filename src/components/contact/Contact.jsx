@@ -61,16 +61,19 @@ const Contact = () => {
 								muzaimsurya16@gmail.com
 							</span>
 
-							<a
+							<button
+								type="button"
 								onClick={() =>
-									window.open("mailto:muzaimsurya16@gmail")
+									window.open(
+										"mailto:muzaimsurya16@gmail.com",
+										"_self"
+									)
 								}
 								className="contact__button"
-								style={{ cursor: "pointer" }}
 							>
 								Write me
 								<i className="bx bx-right-arrow-alt contact__button-icon"></i>
-							</a>
+							</button>
 						</div>
 
 						<div className="contact__card">
@@ -84,6 +87,7 @@ const Contact = () => {
 								href="https://api.whatsapp.com/send/?phone=6282257787559&text&type=phone_number&app_absent=0"
 								className="contact__button"
 								target="_blank"
+								rel="noreferrer"
 							>
 								Chat me
 								<i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -97,14 +101,20 @@ const Contact = () => {
 								M Syafri Surya
 							</span>
 
-							<a
-								onClick={() => window.open("")}
+							<button
+								type="button"
+								onClick={() =>
+									window.open(
+										"https://m.me/",
+										"_blank",
+										"noopener,noreferrer"
+									)
+								}
 								className="contact__button"
-								style={{ cursor: "pointer" }}
 							>
 								Message me
 								<i className="bx bx-right-arrow-alt contact__button-icon"></i>
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>
