@@ -15,7 +15,11 @@ const Services = () => {
 
 			<div className="services__container container grid">
 				{/* 1 */}
-				<div className="services__content" data-aos="flip-left">
+				<div
+					className="services__content reveal-card"
+					data-aos="card-reveal"
+					data-aos-delay="0"
+				>
 					<div>
 						<i className="uil uil-web-grid services__icon"></i>
 						<h3 className="services__title">
@@ -86,7 +90,11 @@ const Services = () => {
 				{/* END 1 */}
 
 				{/* 2 */}
-				<div className="services__content" data-aos="flip-up">
+				<div
+					className="services__content reveal-card"
+					data-aos="card-reveal"
+					data-aos-delay="100"
+				>
 					<div>
 						<i className="uil uil-arrow services__icon"></i>
 						<h3 className="services__title">
@@ -159,7 +167,11 @@ const Services = () => {
 				{/* END 2 */}
 
 				{/* 3 */}
-				<div className="services__content" data-aos="flip-right">
+				<div
+					className="services__content reveal-card"
+					data-aos="card-reveal"
+					data-aos-delay="200"
+				>
 					<div>
 						<i className="uil uil-edit services__icon"></i>
 						<h3 className="services__title">

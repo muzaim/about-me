@@ -27,7 +27,12 @@ function App() {
 	});
 
 	useEffect(() => {
-		AOS.init(); //You can add options as per your need inside an object
+		AOS.init({
+			duration: 900,
+			offset: 40,
+			once: true,
+			easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+		});
 	}, []);
 
 	useEffect(() => {

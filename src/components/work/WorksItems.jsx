@@ -1,8 +1,15 @@
 import React from "react";
 
-const WorksItems = ({ item }) => {
+const WorksItems = ({ item, index }) => {
 	return (
-		<div className="work__card" key={item.id} data-aos="fade-up">
+		<div
+			className="work__card reveal-card"
+			key={item.id}
+			data-aos="card-reveal"
+			data-aos-delay={index * 180}
+			data-aos-duration="820"
+			data-aos-anchor-placement="top-bottom"
+		>
 			<img src={item.image} alt="" className="work__img" />
 			<div className="work__data">
 				<h3 className="work__title">{item.title}</h3>

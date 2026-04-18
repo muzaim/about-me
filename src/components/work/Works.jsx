@@ -48,7 +48,9 @@ const Works = () => {
 
 			<div className="work__container container grid">
 				{projects.map((item, index) => {
-					return <WorksItems item={item} key={index} />;
+					return (
+						<WorksItems item={item} index={index} key={index} />
+					);
 				})}
 			</div>
 		</div>

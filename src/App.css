@@ -196,6 +196,45 @@ body.dark-theme .button {
   align-items: center;
 }
 
+[data-aos="card-reveal"] {
+  opacity: 0;
+  transform: translate3d(0, 48px, 0) scale(0.96);
+  filter: blur(10px);
+  transition-property: transform, opacity, filter;
+}
+
+[data-aos="card-reveal"].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  will-change: transform;
+}
+
+.reveal-card:hover {
+  transform: translateY(-6px);
+}
+
+body.dark-theme .reveal-card:hover {
+  box-shadow: 0 20px 45px rgba(2, 6, 23, 0.32);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos="card-reveal"],
+  [data-aos="card-reveal"].aos-animate,
+  .reveal-card,
+  .reveal-card:hover {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+
 /* =============================BREAKPOINTS================================ */
 /* LARGE DEVICE */
 @media screen and (max-width: 992px) {

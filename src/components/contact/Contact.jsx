@@ -50,11 +50,19 @@ const Contact = () => {
 			<span className="section__subtitle">Contact me</span>
 
 			<div className="contact__container container grid">
-				<div className="contact__content" data-aos="flip-left">
+				<div
+					className="contact__content"
+					data-aos="card-reveal"
+					data-aos-delay="0"
+				>
 					<h3 className="contact__title">Talk to me</h3>
 
 					<div className="contact__info">
-						<div className="contact__card">
+						<div
+							className="contact__card reveal-card"
+							data-aos="card-reveal"
+							data-aos-delay="80"
+						>
 							<i className="bx bx-mail-send contact__card-icon"></i>
 							<h3 className="contact__card-title">Email</h3>
 							<span className="contact__card-data">
@@ -76,7 +84,11 @@ const Contact = () => {
 							</button>
 						</div>
 
-						<div className="contact__card">
+						<div
+							className="contact__card reveal-card"
+							data-aos="card-reveal"
+							data-aos-delay="160"
+						>
 							<i className="bx bxl-whatsapp contact__card-icon"></i>
 							<h3 className="contact__card-title">Whatsap</h3>
 							<span className="contact__card-data">
@@ -94,7 +106,11 @@ const Contact = () => {
 							</a>
 						</div>
 
-						<div className="contact__card">
+						<div
+							className="contact__card reveal-card"
+							data-aos="card-reveal"
+							data-aos-delay="240"
+						>
 							<i className="bx bxl-messenger contact__card-icon"></i>
 							<h3 className="contact__card-title">Messenger</h3>
 							<span className="contact__card-data">
@@ -121,7 +137,8 @@ const Contact = () => {
 
 				<div
 					className="contact__content form__test"
-					data-aos="flip-left"
+					data-aos="card-reveal"
+					data-aos-delay="120"
 				>
 					<h3 className="contact__title">Write me your project</h3>
 					<form
