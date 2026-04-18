@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ theme, onToggleTheme }) => {
 	// ========================== TOGGLE MENU ========================== //
 	const [Toggle, showMenu] = useState(false);
 	const [activeNav, setActiveNav] = useState("#about");
-	window.addEventListener("scroll", function () {
-		const header = document.querySelector(".header");
-		// when the scroll is higher than 560viewport height
-		if (this.scrollY >= 80) header.classList.add("scroll-header");
-		else header.classList.remove("scroll-header");
-	});
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const header = document.querySelector(".header");
+			if (!header) return;
+
+			if (window.scrollY >= 80) header.classList.add("scroll-header");
+			else header.classList.remove("scroll-header");
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	return (
 		<div>
@@ -101,11 +109,31 @@ const Header = () => {
 						></i>
 					</div>
 
-					<div
-						className="nav__toggle"
-						onClick={() => showMenu(!Toggle)}
-					>
-						<i className="uil uil-apps"></i>
+					<div className="nav__actions">
+						<button
+							type="button"
+							className="theme__toggle"
+							onClick={onToggleTheme}
+							aria-label={`Activate ${
+								theme === "dark" ? "light" : "dark"
+							} mode`}
+							title={`Switch to ${
+								theme === "dark" ? "light" : "dark"
+							} mode`}
+						>
+							<i
+								className={`uil ${
+									theme === "dark" ? "uil-sun" : "uil-moon"
+								}`}
+							></i>
+						</button>
+
+						<div
+							className="nav__toggle"
+							onClick={() => showMenu(!Toggle)}
+						>
+							<i className="uil uil-apps"></i>
+						</div>
 					</div>
 				</nav>
 			</header>

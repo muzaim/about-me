@@ -9,10 +9,17 @@
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 8%);
+  --text-color: hsl(var(--hue), var(--sat), 35%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --container-color: #ffffff;
+  --surface-color: #ffffff;
+  --border-color: rgba(17, 24, 39, 0.08);
+  --input-border-color: rgba(17, 24, 39, 0.18);
+  --header-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --overlay-color: rgba(15, 23, 42, 0.55);
+  --card-muted-text: #6b7280;
+  --hero-ring-color: rgb(255 255 255 / 30%);
 
   /* FONT AND TYPOGRAPHY */
   --body-font: "Poppins", sans-serif;
@@ -50,6 +57,21 @@
   --z-modal: 1000;
 }
 
+body.dark-theme {
+  --title-color: hsl(0, 0%, 96%);
+  --title-color-dark: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 75%);
+  --body-color: #0b0f19;
+  --container-color: #121826;
+  --surface-color: #182132;
+  --border-color: rgba(148, 163, 184, 0.18);
+  --input-border-color: rgba(148, 163, 184, 0.35);
+  --header-shadow: 0 10px 30px rgba(2, 6, 23, 0.45);
+  --overlay-color: rgba(2, 6, 23, 0.74);
+  --card-muted-text: #9ca3af;
+  --hero-ring-color: rgb(15 23 42 / 45%);
+}
+
 /* RESPONSIVE TYPOGRAPHY */
 @media screen and (max-width: 992px) {
   :root {
@@ -85,6 +107,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -162,6 +185,10 @@ img {
 
 .button__icon {
   margin-left: var(--mb-0-5);
+}
+
+body.dark-theme .button {
+  color: var(--body-color);
 }
 
 .button--flex {

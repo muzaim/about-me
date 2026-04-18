@@ -29,7 +29,7 @@
 
 .work__card {
 	background-color: var(--container-color);
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid var(--border-color);
 	padding: 1.25rem;
 	border-radius: 1rem;
 	display: flex;
@@ -51,7 +51,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* garis pemisah tipis */
+	border-bottom: 1px solid var(--border-color);
 	margin-bottom: var(--mb-0-5);
 }
 
@@ -65,18 +65,18 @@
 .work__title {
 	font-size: var(--normal-font-size);
 	font-weight: 600;
-	color: #000;
+	color: var(--title-color);
 	margin: 0;
 }
 
 .work__tools {
 	font-size: var(--small-font-size);
-	color: #aaa; /* abu-abu elegan */
+	color: var(--card-muted-text);
 	font-style: italic;
 }
 
 .work__button {
-	color: #000;
+	color: var(--title-color);
 	font-size: var(--small-font-size);
 	display: flex;
 	align-items: center;

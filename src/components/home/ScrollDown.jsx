@@ -25,7 +25,7 @@ const ScrollDown = () => {
             d="M123.359,79.775l0,72.843"
             style={{
               fill: "none",
-              stroke: "#000",
+              stroke: "var(--title-color)",
               strokeWidth: "20px",
             }}
           ></path>
