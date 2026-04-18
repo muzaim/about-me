@@ -1,5 +1,12 @@
 import React from "react";
 import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faInstagram,
+	faLinkedin,
+	faGithub,
+	faUpwork,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
 	return (
@@ -26,31 +33,32 @@ const Footer = () => {
 				</ul>
 				<div className="footer__social">
 					<a
-						href="https://www.instagram.com/msyafrisuryam/"
+						href="https://www.upwork.com/freelancers/~01efa129667ae9e3f3"
 						className="footer__social-link"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<i className="bx bxl-instagram"></i>
+						<FontAwesomeIcon icon={faUpwork} />
 					</a>
+
 					<a
 						href="https://www.linkedin.com/in/syafri-surya-574369207/"
 						className="footer__social-link"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<i className="bx bxl-linkedin"></i>
+						<FontAwesomeIcon icon={faLinkedin} />
 					</a>
+
 					<a
 						href="https://github.com/muzaim"
 						className="footer__social-link"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<i className="bx bxl-github"></i>
+						<FontAwesomeIcon icon={faGithub} />
 					</a>
 				</div>
-
 				{/* <span className="footer__copy">
 					&#169;Copyrihgt. All rights reserved
 				</span> */}
