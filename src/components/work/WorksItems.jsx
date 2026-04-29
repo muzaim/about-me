@@ -1,34 +1,13 @@
 import React from "react";
+import LearningProject from "./LearningProject";
+import ProfessionalProject from "./ProfessionalProject";
 
 const WorksItems = ({ item, index }) => {
-	return (
-		<div
-			className="work__card reveal-card"
-			key={item.id}
-			data-aos="card-reveal"
-			data-aos-delay={index * 180}
-			data-aos-duration="820"
-			data-aos-anchor-placement="top-bottom"
-		>
-			<img src={item.image} alt="" className="work__img" />
-			<div className="work__data">
-				<h3 className="work__title">{item.title}</h3>
-				<p className="work__tools">{item.tools}</p>
-			</div>
-			<div className="work__description">{item.desc}</div>
-			{item.link && (
-				<a
-					href={item.link}
-					className="work__button"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Demo{" "}
-					<i className="bx bx-right-arrow-alt work__button-icon"></i>
-				</a>
-			)}
-		</div>
-	);
+	if (item.category === "professional") {
+		return <ProfessionalProject item={item} index={index} />;
+	}
+
+	return <LearningProject item={item} index={index} />;
 };
 
 export default WorksItems;

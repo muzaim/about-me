@@ -1,28 +1,46 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { projectsData, projectNav } from "./Data";
 import WorksItems from "./WorksItems";
 
 const Works = () => {
 	const [item, setItem] = useState({
-		name: "all",
+		category: projectNav[0].category,
 	});
 	const [projects, setProjects] = useState([]);
 	const [active, setActive] = useState(0);
+	const [isSwitching, setIsSwitching] = useState(false);
+	const switchTimer = useRef(null);
+	const revealTimer = useRef(null);
 
 	useEffect(() => {
-		if (item.name === "all") {
-			setProjects(projectsData);
-		} else {
-			const newProjects = projectsData.filter((project) => {
-				return project.category.toLowerCase() === item.name;
-			});
-			setProjects(newProjects);
-		}
+		const newProjects = projectsData.filter((project) => {
+			return project.category === item.category;
+		});
+		setProjects(newProjects);
 	}, [item]);
 
-	const handleClick = (e, index) => {
-		setItem({ name: e.target.textContent.toLowerCase() });
-		setActive(index);
+	useEffect(() => {
+		return () => {
+			window.clearTimeout(switchTimer.current);
+			window.clearTimeout(revealTimer.current);
+		};
+	}, []);
+
+	const handleClick = (category, index) => {
+		if (category === item.category || isSwitching) {
+			return;
+		}
+
+		setIsSwitching(true);
+
+		switchTimer.current = window.setTimeout(() => {
+			setItem({ category });
+			setActive(index);
+
+			revealTimer.current = window.setTimeout(() => {
+				setIsSwitching(false);
+			}, 80);
+		}, 180);
 	};
 
 	return (
@@ -31,8 +49,8 @@ const Works = () => {
 				{projectNav.map((item, index) => {
 					return (
 						<span
-							onClick={(e) => {
-								handleClick(e, index);
+							onClick={() => {
+								handleClick(item.category, index);
 							}}
 							className={`${
 								active === index ? "active-work" : ""
@@ -46,10 +64,18 @@ const Works = () => {
 				})}
 			</div>
 
-			<div className="work__container container grid">
+			<div
+				className={`work__container ${
+					item.category === "professional"
+						? "work__container--professional"
+						: ""
+				} ${
+					isSwitching ? "work__container--switching" : ""
+				} container grid`}
+			>
 				{projects.map((item, index) => {
 					return (
-						<WorksItems item={item} index={index} key={index} />
+						<WorksItems item={item} index={index} key={item.id} />
 					);
 				})}
 			</div>
