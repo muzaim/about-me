@@ -92,7 +92,7 @@ export const projectsData = [
 		logoVariant: "wide",
 		projectName: "SMF - Market Risk Analyst",
 		duration: "Jan 2026 - Present",
-		tools: "Golang, NextJs",
+		tools: "Golang, NextJS",
 		responsibilities: [
 			"Built a Market Risk Profiling System for SMF, centralizing portfolio exposure analysis and eliminating manual risk assessment processes.",
 			"Implemented backend logic for risk scoring, volatility analysis, and automated reporting to enable faster and more accurate decision making.",
@@ -108,7 +108,7 @@ export const projectsData = [
 		logoVariant: "wide",
 		projectName: "SMF - Risk Register",
 		duration: "Dec 2024 - Aug 2025",
-		tools: "Golang, VueJs",
+		tools: "Golang, VueJS",
 		responsibilities: [
 			"Built the frontend for a Risk Register System, centralizing risk assessment and monitoring processes across multiple risk events.",
 			"Designed interactive risk scoring, impact-likelihood evaluation, and visual categorization features to improve usability and decision clarity.",
@@ -140,7 +140,7 @@ export const projectsData = [
 		logoVariant: "wide",
 		projectName: "SMF - I Procurement",
 		duration: "March 2022 - Jan 2023",
-		tools: "Golang, VueJs",
+		tools: "Golang, VueJS",
 		responsibilities: [
 			"Built a Procurement System to centralize and digitalize procurement processes, eliminating manual workflows from requisition to vendor selection.",
 			"Implemented key functionalities for purchase requests, approval flows, and vendor management integrated with budgeting systems.",
