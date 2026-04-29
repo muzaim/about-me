@@ -1,11 +1,11 @@
 import Work1 from "../../assets/portf/img12.png";
 import Work3 from "../../assets/portf/nadia.png";
-import Work4 from "../../assets/portf/skilline.png";
-import Work6 from "../../assets/portf/travlog.png";
+import Work4 from "../../assets/work/skilline.png";
+import Work6 from "../../assets/work/travlog.png";
 import Work7 from "../../assets/portf/mag1.png";
 import Work8 from "../../assets/portf/ollama.png";
 import Work9 from "../../assets/portf/img13.png";
-import Work10 from "../../assets/portf/cs.png";
+import Work10 from "../../assets/work/crypton.png";
 import AccLogo from "../../assets/logo/acc.png";
 import SmfLogo from "../../assets/logo/smf.svg";
 
@@ -77,7 +77,7 @@ export const projectsData = [
 	{
 		id: 10,
 		image: Work10,
-		title: "Cryptho Sphere",
+		title: "Crypto Sphere",
 		category: "learning",
 		link: "https://crypto-sphere-murex.vercel.app/",
 		tools: "ReactJS",
